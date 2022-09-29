@@ -49,7 +49,7 @@ if __name__=="__main__":
                 row = row.replace(",Batch", ",Name, Batch")
             if singleSUBmrk in row:
                 row = row.replace(f",,{singleSUBmrk}", f",,,{singleSUBmrk}")
-            if "NC" in rown[0]:
+            if "NC" in rown[1]:
                 name = GetStudName(rown[0])
                 newdat += f"{rown[0]},{name},{rown[1]},{rown[2]},{rown[3]},{rown[4]},{rown[5]},{rown[6]}\n"
             else:
